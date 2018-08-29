@@ -53,7 +53,6 @@ class TableViewController: UITableViewController {
     override var inputAccessoryView: UIView? {
         if _inputAccessoryView == nil {
             _inputAccessoryView = Bundle.main.loadNibNamed("InputAccessoryView", owner: self, options: nil)?.first as? UIView
-            _inputAccessoryView?.frame = CGRect(origin: CGPoint.zero, size: _inputAccessoryView!.intrinsicContentSize)
         }
         return _inputAccessoryView
     }
