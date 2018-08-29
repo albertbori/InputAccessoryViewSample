@@ -13,14 +13,18 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        (tableView.inputAccessoryView as? InputAccessoryView)?.delegate = self
+        (inputAccessoryView as? InputAccessoryView)?.delegate = self
+        becomeFirstResponder()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let lastIndexPath = IndexPath(row: tableView.numberOfRows(inSection: 0) - 1, section: 0)
         tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: false)
-        tableView.becomeFirstResponder()
+    }
+    
+    deinit {
+        print(">> No retain cycle!!!")
     }
 
     // MARK: - Table view data source
@@ -41,16 +45,38 @@ class TableViewController: UITableViewController {
 
         return cell
     }
+    
+    
+    override var canBecomeFirstResponder: Bool { return true }
+    
+    private var _inputAccessoryView: UIView?
+    override var inputAccessoryView: UIView? {
+        if _inputAccessoryView == nil {
+            _inputAccessoryView = Bundle.main.loadNibNamed("InputAccessoryView", owner: self, options: nil)?.first as? UIView
+            _inputAccessoryView?.frame = CGRect(origin: CGPoint.zero, size: _inputAccessoryView!.intrinsicContentSize)
+        }
+        return _inputAccessoryView
+    }
 }
 
 extension TableViewController: InputAccessoryViewDelegate {
+    func inputAccessoryDidBeginEditing() {
+        let lastIndexPath = IndexPath(row: tableView.numberOfRows(inSection: 0) - 1, section: 0)
+        tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
+    }
+    
     func addRow(text: String) {
         _model.rows.append(text)
-        let lastIndexPath = IndexPath(row: tableView.numberOfRows(inSection: 0) - 1, section: 0)
+        let lastIndexPath = IndexPath(row: _model.rows.count - 1, section: 0)
         tableView.insertRows(at: [lastIndexPath], with: .automatic)
     }
     
     func inputAccessoryDidChangeSize() {
+        let lastIndexPath = IndexPath(row: tableView.numberOfRows(inSection: 0) - 1, section: 0)
+        tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
+    }
+    
+    func inputAccessoryDidEndEditing() {
         let lastIndexPath = IndexPath(row: tableView.numberOfRows(inSection: 0) - 1, section: 0)
         tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
     }

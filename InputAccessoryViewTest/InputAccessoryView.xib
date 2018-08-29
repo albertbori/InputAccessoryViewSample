@@ -26,16 +26,13 @@
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-Zy-X1X">
                     <rect key="frame" x="8" y="9" width="359" height="33"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JNo-0Y-fKs">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JNo-0Y-fKs">
                             <rect key="frame" x="0.0" y="0.0" width="321" height="33"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="33" id="lV6-jm-ZBY"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
-                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVs-Ia-v5n">
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVs-Ia-v5n">
                             <rect key="frame" x="329" y="0.0" width="30" height="33"/>
                             <state key="normal" title="Add"/>
                             <connections>
@@ -60,7 +57,6 @@
             <connections>
                 <outlet property="addButton" destination="RVs-Ia-v5n" id="hlP-kg-NzA"/>
                 <outlet property="textView" destination="JNo-0Y-fKs" id="6F2-Ua-801"/>
-                <outlet property="textViewHeightConstraint" destination="lV6-jm-ZBY" id="i7H-NZ-lUp"/>
             </connections>
             <point key="canvasLocation" x="34.5" y="343"/>
         </view>

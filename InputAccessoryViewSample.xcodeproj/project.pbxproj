@@ -14,12 +14,11 @@
 		7091BB5F21370555003F941C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BB5E21370555003F941C /* TableViewController.swift */; };
 		7091BB612137056E003F941C /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7091BB602137056E003F941C /* InputAccessoryView.xib */; };
 		7091BB6321370582003F941C /* InputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BB6221370582003F941C /* InputAccessoryView.swift */; };
-		7091BB65213705A6003F941C /* InputAccessoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BB64213705A6003F941C /* InputAccessoryTableView.swift */; };
 		7091BB67213706FC003F941C /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BB66213706FC003F941C /* TableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7091BB4921370527003F941C /* InputAccessoryViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputAccessoryViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7091BB4921370527003F941C /* InputAccessoryViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputAccessoryViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7091BB4C21370527003F941C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7091BB5121370527003F941C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7091BB5321370529003F941C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,7 +27,6 @@
 		7091BB5E21370555003F941C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7091BB602137056E003F941C /* InputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputAccessoryView.xib; sourceTree = "<group>"; };
 		7091BB6221370582003F941C /* InputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessoryView.swift; sourceTree = "<group>"; };
-		7091BB64213705A6003F941C /* InputAccessoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessoryTableView.swift; sourceTree = "<group>"; };
 		7091BB66213706FC003F941C /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +52,7 @@
 		7091BB4A21370527003F941C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7091BB4921370527003F941C /* InputAccessoryViewTest.app */,
+				7091BB4921370527003F941C /* InputAccessoryViewSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +63,6 @@
 				7091BB4C21370527003F941C /* AppDelegate.swift */,
 				7091BB5321370529003F941C /* Assets.xcassets */,
 				7091BB5821370529003F941C /* Info.plist */,
-				7091BB64213705A6003F941C /* InputAccessoryTableView.swift */,
 				7091BB6221370582003F941C /* InputAccessoryView.swift */,
 				7091BB602137056E003F941C /* InputAccessoryView.xib */,
 				7091BB5521370529003F941C /* LaunchScreen.storyboard */,
@@ -79,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7091BB4821370527003F941C /* InputAccessoryViewTest */ = {
+		7091BB4821370527003F941C /* InputAccessoryViewSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7091BB5B21370529003F941C /* Build configuration list for PBXNativeTarget "InputAccessoryViewTest" */;
+			buildConfigurationList = 7091BB5B21370529003F941C /* Build configuration list for PBXNativeTarget "InputAccessoryViewSample" */;
 			buildPhases = (
 				7091BB4521370527003F941C /* Sources */,
 				7091BB4621370527003F941C /* Frameworks */,
@@ -91,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = InputAccessoryViewTest;
+			name = InputAccessoryViewSample;
 			productName = InputAccessoryViewTest;
-			productReference = 7091BB4921370527003F941C /* InputAccessoryViewTest.app */;
+			productReference = 7091BB4921370527003F941C /* InputAccessoryViewSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7091BB4421370527003F941C /* Build configuration list for PBXProject "InputAccessoryViewTest" */;
+			buildConfigurationList = 7091BB4421370527003F941C /* Build configuration list for PBXProject "InputAccessoryViewSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7091BB4821370527003F941C /* InputAccessoryViewTest */,
+				7091BB4821370527003F941C /* InputAccessoryViewSample */,
 			);
 		};
 /* End PBXProject section */
@@ -152,7 +149,6 @@
 				7091BB67213706FC003F941C /* TableViewModel.swift in Sources */,
 				7091BB6321370582003F941C /* InputAccessoryView.swift in Sources */,
 				7091BB5F21370555003F941C /* TableViewController.swift in Sources */,
-				7091BB65213705A6003F941C /* InputAccessoryTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JH3Q66K98;
 				INFOPLIST_FILE = InputAccessoryViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JH3Q66K98;
 				INFOPLIST_FILE = InputAccessoryViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7091BB4421370527003F941C /* Build configuration list for PBXProject "InputAccessoryViewTest" */ = {
+		7091BB4421370527003F941C /* Build configuration list for PBXProject "InputAccessoryViewSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7091BB5921370529003F941C /* Debug */,
@@ -340,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7091BB5B21370529003F941C /* Build configuration list for PBXNativeTarget "InputAccessoryViewTest" */ = {
+		7091BB5B21370529003F941C /* Build configuration list for PBXNativeTarget "InputAccessoryViewSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7091BB5C21370529003F941C /* Debug */,

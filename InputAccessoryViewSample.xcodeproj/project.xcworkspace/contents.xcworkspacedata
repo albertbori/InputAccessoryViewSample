@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:InputAccessoryViewTest.xcodeproj">
+      location = "self:/Users/albertbori/dev/InputAccessoryViewTest/InputAccessoryViewSample.xcodeproj">
    </FileRef>
 </Workspace>

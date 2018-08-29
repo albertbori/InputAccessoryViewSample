@@ -6,14 +6,44 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home-->
+        <scene sceneID="OBQ-FK-Emg">
+            <objects>
+                <viewController id="dn5-Te-gfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Oa-Jk-KXw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vw-4A-kaa">
+                                <rect key="frame" x="96" y="350.5" width="183" height="30"/>
+                                <state key="normal" title="Show TableView Controller"/>
+                                <connections>
+                                    <segue destination="dTG-c7-zvs" kind="show" id="pgT-N7-Zh3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Vw-4A-kaa" firstAttribute="centerX" secondItem="QBN-3R-5p3" secondAttribute="centerX" id="STc-z4-5G2"/>
+                            <constraint firstItem="1Vw-4A-kaa" firstAttribute="centerY" secondItem="QBN-3R-5p3" secondAttribute="centerY" id="Ti9-hm-2Nk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QBN-3R-5p3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="9tY-zi-TqV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6K-rX-pHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="30"/>
+        </scene>
         <!--Input Accessory Sample-->
         <scene sceneID="N0T-Tj-h3N">
             <objects>
                 <tableViewController id="dTG-c7-zvs" customClass="TableViewController" customModule="InputAccessoryViewTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hCt-Hw-dNT" customClass="InputAccessoryTableView" customModule="InputAccessoryViewTest" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hCt-Hw-dNT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,7 +66,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frQ-Fd-bkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="31"/>
+            <point key="canvasLocation" x="1044" y="30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PXj-UW-IGP">
@@ -47,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dTG-c7-zvs" kind="relationship" relationship="rootViewController" id="Tbu-Kv-AtT"/>
+                        <segue destination="dn5-Te-gfB" kind="relationship" relationship="rootViewController" id="7G8-8n-CI5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YM-gj-tnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
