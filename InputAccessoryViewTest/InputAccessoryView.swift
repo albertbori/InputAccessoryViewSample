@@ -28,9 +28,7 @@ class InputAccessoryView: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        var size = textView.sizeThatFits(CGSize(width: textView.frame.width, height: CGFloat.greatestFiniteMagnitude))
-        size.height += 8 + 8 + 1 //margins and top border
-        return size
+        return self.sizeThatFits(CGSize(width: self.frame.width, height: CGFloat.greatestFiniteMagnitude))
     }
 }
 
